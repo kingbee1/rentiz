@@ -14,7 +14,7 @@
     --color-bg: #131B26;
     --color-bg-variant: #2c2c6c;
     --color-primary: #43A091;
-    --color-primary-variant: rgba(77, 181, 255, 0.4);
+    --color-primary-variant: rgba(77, 181, 255, 0.2);
     --color-white: #F5FAF4;
     --color-light: #A9AEB4;
 
@@ -27,6 +27,9 @@
     /*  --container-width: 84%;
     --container-width-table: 90%;
     --container-width-phone: 94%; */
+
+    --bottom-section-padding: 12rem;
+    --bottom-section-padding-mobile: 8rem;
 }
 
 html {
@@ -60,6 +63,8 @@ a {
 }
 section {
     margin-top: 8rem;
+    padding-bottom: var(--bottom-section-padding);
+
 }
 
 
