@@ -24,7 +24,12 @@ nav {
 }
 
 header{
+    background: var(--color-bg);
     padding-bottom: var(--bottom-section-padding);
+}
+
+header h1{
+    font-size: 3rem;
 }
 
 .header__container {
@@ -47,6 +52,9 @@ header{
 }
 
 /* FEATURE */
+.feature__container{
+    background: var(--color-bg);
+}
 .feature__image {
     width: 100%;
     display: flex;
@@ -55,4 +63,9 @@ header{
 
 .feature__image img {
     width: 90px;
+}
+
+/* resident */
+.residence__container {
+    background: #202d3b;
 }
