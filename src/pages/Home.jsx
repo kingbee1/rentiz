@@ -6,7 +6,12 @@ const Home = () => {
   return (
     <div>
       <Navbar />
-        <h1>body??</h1>
+        <section className="container">
+            <h3>Perfect Way To Buy And Sell a House</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Quam laborum sequi voluptate.
+            </p>
+        </section>
         <Footer />
     </div>
   );
