@@ -23,6 +23,10 @@
     --container-width-lg: 75%;
     --container-width-md: 86%;
     --container-width-sm: 90%;
+
+    /*  --container-width: 84%;
+    --container-width-table: 90%;
+    --container-width-phone: 94%; */
 }
 
 html {
@@ -34,7 +38,7 @@ body {
     background: var(--color-bg);
     color: var(--color-white);
     line-height: 1.7;
-    background-image: url(../src/assets/bg-texture.png);
+    /* background-image: url(../src/assets/bg-texture.png); */
 }
 
 .container {
@@ -52,4 +56,28 @@ h1 {
 
 section {
     margin-top: 8rem;
+}
+
+
+.btn {
+    display: inline-block;
+    padding: 1rem 2.3rem;
+    background: var(--color-primary);
+    color: var(--color-black);
+    font-weight: 500;
+    border: 1px solid transparent;
+    border-radius: 0.4rem;
+}
+
+.btn-primary {
+    background: var(--color-black);
+    color: var(--color-white);
+    transition: var(--transition);
+    border: 1px solid transparent;
+}
+
+.btn-primary:hover {
+    background: var(--color-white);
+    color: var(--color-black);
+    border-color: var(--color-black);
 }
