@@ -272,6 +272,22 @@ const Home = () => {
         </div>
       </section>
 
+      {/****************** SIMPLY ******************/}
+
+      <section className="container simply__container">
+        <div className="simply__content">
+            <div className="simply__content-left">
+                <h1>Let's Simply Begin With Rentiz</h1>
+            </div>
+            <div className="simply__content-right">
+                <h5>
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta aperiam consectetur adipisci quod autem consequuntur numquam harum rerum nulla, omnis nostrum tempora.
+                </h5>
+                <button className="btn">Get Started</button>
+            </div>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );

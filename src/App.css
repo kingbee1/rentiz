@@ -168,7 +168,7 @@ header h1{
     font-weight: 300;
 }
 
-/* HELP */
+/************************ HELP ************************/
 .help__container {
 }
 
@@ -197,5 +197,38 @@ header h1{
 .help__word h5 {
     font-weight: 300;
     width: 80%;
+    margin-bottom: 2rem;
+}
+
+/************************ SIMPLY ************************/
+.simply__container {
+    background: red;
+    padding-top: 8rem;
+}
+
+.simply__content {
+    display: flex;
+}
+
+.simply__content-left {
+    width: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.simply__content-left h1{
+    width: 40%;
+    font-size: 3rem;
+    line-height: 1.1;
+}
+
+.simply__content-right {
+    width: 100%;
+}
+
+.simply__content-right h5 {
+    width: 70%;
+    font-weight: 300;
+    padding-top: 1rem;
     margin-bottom: 2rem;
 }
