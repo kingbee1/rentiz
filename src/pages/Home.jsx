@@ -183,12 +183,14 @@ const Home = () => {
         </Carousel>
 
         <div className="residence__btn">
-        <button className="btn">View All Properties</button>
-
+          <button className="btn">View All Properties</button>
         </div>
-
-
       </section>
+
+      <section className="container">
+        <h1>Why Choose Us?</h1>
+      </section>
+
       <Footer />
     </div>
   );
