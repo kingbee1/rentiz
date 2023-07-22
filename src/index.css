@@ -64,7 +64,10 @@ a {
 section {
     margin-top: 8rem;
     padding-bottom: var(--bottom-section-padding);
+}
 
+p {
+    font-size: 1.1rem;
 }
 
 

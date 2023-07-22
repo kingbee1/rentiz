@@ -11,6 +11,10 @@ import { TbRulerMeasure } from "react-icons/tb";
 import { FaSearchDollar } from "react-icons/fa";
 import { GiExtraTime } from "react-icons/gi";
 import { TiStopwatch } from "react-icons/ti";
+import { BiSolidQuoteAltLeft } from "react-icons/bi";
+import { RiArrowRightSLine } from "react-icons/ri";
+import { RiArrowLeftSLine } from "react-icons/ri";
+
 
 const Home = () => {
   const responsive = {
@@ -198,22 +202,46 @@ const Home = () => {
 
           <div className="choose__card">
           <div className="icon-wrap">
-            <FaSearchDollar className="icon" />
+            <FaSearchDollar className="icon choose_icon" />
           </div>
-          </div>
-
-          <div className="choose__card">
-            <div className="icon-wrap">
-              <GiExtraTime className="icon" />
-            </div>
+          <h2>Easy To Find</h2>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit molestiae saepe mollitia et aliquam, nesciunt quae!</p>
           </div>
 
           <div className="choose__card">
             <div className="icon-wrap">
-                <TiStopwatch className="icon" />
+              <GiExtraTime className="icon choose_icon" />
             </div>
+            <h2>Affordable Prices</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit molestiae saepe mollitia et aliquam, nesciunt quae!</p>
           </div>
 
+          <div className="choose__card">
+            <div className="icon-wrap">
+                <TiStopwatch className="icon choose_icon" />
+            </div>
+            <h2>Quick Process</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed suscipit molestiae saepe mollitia et aliquam, nesciunt quae!</p>
+          </div>
+
+        </div>
+    
+        <div className="choose__base">
+            <BiSolidQuoteAltLeft className="icon choose_icon"/>
+            <h2>
+            Using thank you referral cards is a highly effective way to ensure your customers recommend your real estate services more often and proactively.
+            We can proudly tell you that we will be using their servies again and again.
+            </h2>
+            <div className="choose__base-2">
+                <div>
+                    <h3>Elano Pravo</h3>
+                    <h4>Ceo, Upstate</h4>
+                </div>
+                <div>
+                    <RiArrowLeftSLine className="choose_icon"/>
+                    <RiArrowRightSLine className="choose_icon"/>
+                </div>
+            </div>
         </div>
 
       </section>
