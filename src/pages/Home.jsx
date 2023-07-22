@@ -14,6 +14,8 @@ import { TiStopwatch } from "react-icons/ti";
 import { BiSolidQuoteAltLeft } from "react-icons/bi";
 import { RiArrowRightSLine } from "react-icons/ri";
 import { RiArrowLeftSLine } from "react-icons/ri";
+import house1 from "../assets/house.png"
+import house2 from "../assets/house2.png"
 
 
 const Home = () => {
@@ -64,6 +66,8 @@ const Home = () => {
           <img src={vintage} alt="" />
         </div>
       </section>
+
+      {/****************** RESIDENCE ******************/}
 
       <section className="container residence__container">
         <h1>Popular Residence 1B232F</h1>
@@ -194,6 +198,8 @@ const Home = () => {
         </div>
       </section>
 
+      {/****************** CHOOSE ******************/}
+
       <section className="container choose__container">
 
         <h1>Why Choose Us?</h1>
@@ -244,6 +250,26 @@ const Home = () => {
             </div>
         </div>
 
+      </section>
+
+      {/****************** HELP PEOPLE ******************/}
+      <section className="container help__container">
+        <div className="help__content">
+            <div className="help__image">
+                <img src={house1} alt="house for sale" />
+                <img src={house2} alt="house for sale" />
+            </div>
+
+            <div className="help__word">
+                <h1>We Help People Find Homes</h1>
+                <h5>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consectetur eveniet eos nihil velit perferendis quo libero!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consectetur eveniet eos nihil velit perferendis quo libero!
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nam consectetur eveniet eos nihil velit perferendis quo libero!
+                </h5>
+                <button className="btn">Get in touch</button>
+            </div>
+        </div>
       </section>
 
       <Footer />

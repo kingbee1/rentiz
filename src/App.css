@@ -167,3 +167,35 @@ header h1{
 .choose__base-2 h4 {
     font-weight: 300;
 }
+
+/* HELP */
+.help__container {
+}
+
+.help__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    place-items: center;
+}
+.help__image {
+    display: flex;
+    gap: 1rem;
+    width: 100%;
+}
+
+.help__image img {
+    width: 305px;
+    height: 400px;
+}
+
+.help__word h1 {
+    width: 50%;
+    line-height: 1.2;
+    margin-bottom: 1.2rem;
+}
+
+.help__word h5 {
+    font-weight: 300;
+    width: 80%;
+    margin-bottom: 2rem;
+}
