@@ -68,4 +68,45 @@ header h1{
 /* resident */
 .residence__container {
     background: #202d3b;
+    padding-top: 80px;
+   
+}
+
+.residence__container h1 {
+    margin-bottom: 30px;
+}
+
+.residence__image {
+    width: 100%;
+    padding-left: 20px;
+}
+
+.residence__image img {
+    gap: 2rem;
+    width: 90%;
+    /* height: 120px; */
+}
+
+.residence__card-base{
+    display: flex;
+    gap: 1.5rem;
+}
+
+.residence__card-base >div {
+    display: flex;
+    gap: 0.7rem;
+}
+
+.icon  {
+    color: var(--color-primary);
+    font-size: 26px;
+}
+
+.residence__btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin-top: 40px;
 }
