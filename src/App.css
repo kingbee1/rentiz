@@ -111,3 +111,22 @@ header h1{
     text-align: center;
     margin-top: 40px;
 }
+
+/* choose */
+
+.choose__content {
+    display: flex;
+}
+
+
+
+.icon-wrap {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 120px; 
+    height: 120px; 
+    border-radius: 50%; 
+    background-color: #122B34;
+    padding: 5px;
+}

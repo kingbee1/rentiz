@@ -8,6 +8,9 @@ import "react-multi-carousel/lib/styles.css";
 import { LuBedDouble } from "react-icons/lu";
 import { LiaBathSolid } from "react-icons/lia";
 import { TbRulerMeasure } from "react-icons/tb";
+import { FaSearchDollar } from "react-icons/fa";
+import { GiExtraTime } from "react-icons/gi";
+import { TiStopwatch } from "react-icons/ti";
 
 const Home = () => {
   const responsive = {
@@ -187,8 +190,32 @@ const Home = () => {
         </div>
       </section>
 
-      <section className="container">
+      <section className="container choose__container">
+
         <h1>Why Choose Us?</h1>
+
+        <div className="choose__content">
+
+          <div className="choose__card">
+          <div className="icon-wrap">
+            <FaSearchDollar className="icon" />
+          </div>
+          </div>
+
+          <div className="choose__card">
+            <div className="icon-wrap">
+              <GiExtraTime className="icon" />
+            </div>
+          </div>
+
+          <div className="choose__card">
+            <div className="icon-wrap">
+                <TiStopwatch className="icon" />
+            </div>
+          </div>
+
+        </div>
+
       </section>
 
       <Footer />
