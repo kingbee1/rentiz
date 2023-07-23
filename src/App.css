@@ -1,4 +1,7 @@
 /* -------------------NAVBAR-------------------- */
+.active {
+    border-bottom: 3px solid var(--color-primary);
+}
 nav {
     width: 100vw;
     height: 6rem;
