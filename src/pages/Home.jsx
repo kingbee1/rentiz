@@ -54,6 +54,11 @@ const Home = () => {
         <div className="header__image">
           <img src={house} alt="houes" />
         </div>
+        <div className="header__base-search">
+            <div>
+                <p>purpose</p>
+            </div>
+        </div>
       </header>
 
       <section className="container feature__container">

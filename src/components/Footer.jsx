@@ -9,7 +9,7 @@ const Footer = () => {
     <footer>
         <div className='container footer__container'>
             <div className='footer__1'>
-                <h1>Rentiz</h1>
+                <h1 className='logo'>Rentiz</h1>
                 <h4>123, ABudabi makaroni we pinign, sjfhd, San Fransisco.</h4>
                 <ul className='footer__1-socials'>
                     <li><RxLinkedinLogo /></li>

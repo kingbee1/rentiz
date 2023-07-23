@@ -19,6 +19,11 @@ nav {
     align-items: center; 
 }
 
+.logo {
+    font-size: 2.4rem;
+    font-weight: 800;
+}
+
 .nav__items {
    display: flex; 
    gap: 3.5rem;
@@ -29,6 +34,12 @@ nav {
     gap: 1.5rem;
     align-items: center;
 }
+
+#menu__btn, #close__btn {
+    display: none;
+}
+
+/* -------------------HEADER-------------------- */
 
 header{
     background: var(--color-bg);
@@ -56,6 +67,14 @@ header h1{
 .header__image img {
     width: 100%;
     /* height: 120px; */
+}
+
+.header__base-search {
+    background: red;
+    width: 70%;
+    height: 2rem;
+    margin-top: -13%;
+    margin-left: 97%;
 }
 
 /************************ FEATURE ************************/
@@ -267,3 +286,85 @@ footer h4{
     padding: 1.4rem;
     text-align: center;
 }
+
+/* -------------------General-MEDIA QUERIES (TABLET)-------------------- */
+@media screen and (max-width:1024px) {
+    .container {
+        width: var(--container-width-md); 
+    }
+
+    section {
+        padding-bottom: var(--bottom-section-padding-mobile);
+    }
+
+    h1 {
+        font-size: 4.2rem;
+    }
+
+    h2 {
+        font-size: 1.7rem;
+    }
+
+    h3 {
+        font-size: 1.9rem;
+    }
+    nav {
+        background-color: var(--color-bg);
+    }
+
+    .nav__container {
+        position: relative;
+        width: 100vw;
+    }
+
+    .logo {
+        font-size: 1.5rem;
+    }
+
+    .nav__container-logo {
+        margin-left: 2rem;
+    }
+
+    .nav__items {
+        position: fixed;
+        top: 6rem;
+        right: 0;
+        background: var(--color-white);
+        height: max-content;
+        width: 18rem;
+        flex-direction: column;
+        gap: 0;
+        z-index: 3;
+        display: none;
+    }
+
+    .nav__signin-signup {
+        display: none;
+    }
+
+    #menu__btn, #close__btn {
+        display: block;
+        background: var(--color-bg);
+        color: var(--color-white);
+        font-size: 2rem;
+    }
+
+}
+
+
+/* -------------------General-MEDIA QUERIES (MOBILE PHONES)-------------------- */
+@media screen and (max-width:600px) {
+    html {
+        font-size: 14px;
+    }
+    
+    body {
+        background: red;
+    }
+
+    .container {
+        background: red;
+    }
+
+}
+
