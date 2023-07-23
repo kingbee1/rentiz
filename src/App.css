@@ -301,7 +301,7 @@ footer h4{
     }
 
     h1 {
-        font-size: 4.2rem;
+        font-size: 4rem;
     }
 
     h2 {
@@ -382,7 +382,42 @@ footer h4{
     }
 
     /* choose */
-    
+    .choose_icon {
+        font-size: 58px;
+    }
+
+    /* help-tablet */
+    .help__container {
+        width: 100%;
+        padding: 1rem;
+    }
+    .help__content {
+        display: flex;
+        flex-direction: column;
+    }
+    .help__image img {
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .help__word h1 {
+        width: 70%;
+        
+    }
+
+    .help__word h5 {
+        width: 85%;
+
+    }
+    /* simply */
+    .simply__content-left h1{
+        width: 81%;
+    }
+
+    .simply__content-right h5 {
+        width: 81%;
+    }
+
 
 }
 
