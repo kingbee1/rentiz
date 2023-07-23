@@ -293,7 +293,7 @@ footer h4{
 /* -------------------General-MEDIA QUERIES (TABLET)-------------------- */
 @media screen and (max-width:1024px) {
     .container {
-        width: var(--container-width-md); 
+        width: var(--container-width-md) !important; 
     }
 
     section {
@@ -305,11 +305,11 @@ footer h4{
     }
 
     h2 {
-        font-size: 1.7rem;
+        font-size: 1.5rem;
     }
 
     h3 {
-        font-size: 1.9rem;
+        font-size: 1.1rem;
     }
     nav {
         background-color: var(--color-bg);
@@ -345,12 +345,44 @@ footer h4{
         display: none;
     }
 
-    #menu__btn, #close__btn {
+    #menu__btn {
         display: block;
         background: var(--color-bg);
         color: var(--color-white);
         font-size: 2rem;
     }
+    #close__btn {
+        display: none;
+        background: var(--color-bg);
+        color: var(--color-white);
+        font-size: 2rem;
+    }
+
+    /* header */
+    .header__container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__content {
+        text-align: center;
+    }
+    
+    .header__content h1 {
+        line-height: 1.2;
+        margin-bottom: 1rem;
+    }
+    
+    .header__content p {
+        margin-bottom: 1rem;
+    }
+
+    .header__base-search {
+        margin: 0; 
+    }
+
+    /* choose */
+    
 
 }
 
