@@ -381,6 +381,15 @@ footer h4{
         margin: 0; 
     }
 
+    /* residense */
+    .residence__card-base .icon {
+        font-size: 22px;
+    }
+    .residence__card p {
+        font-size: 0.9rem;
+    }
+
+
     /* choose */
     .choose_icon {
         font-size: 58px;
