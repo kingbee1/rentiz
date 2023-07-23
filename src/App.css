@@ -24,6 +24,12 @@ nav {
    gap: 3.5rem;
 }
 
+.nav__signin-signup {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+}
+
 header{
     background: var(--color-bg);
     padding-bottom: var(--bottom-section-padding);
@@ -52,7 +58,7 @@ header h1{
     /* height: 120px; */
 }
 
-/* FEATURE */
+/************************ FEATURE ************************/
 .feature__container{
     background: var(--color-bg);
 }
@@ -70,7 +76,6 @@ header h1{
 .residence__container {
     background: #202d3b;
     padding-top: 80px;
-   
 }
 
 .residence__container h1 {
@@ -112,13 +117,11 @@ header h1{
     margin-top: 40px;
 }
 
-/* choose */
+/************************ CHOOSE ************************/
 .choose__container h1 {
     margin: 8rem 0 3rem;
     text-align: center;
 }
-
-
 
 .choose__content {
     display: flex;

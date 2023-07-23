@@ -14,10 +14,10 @@ const Navbar = () => {
           <Link><li>Contact Us</li></Link>
         </ul>
         <div className="nav__signin-signup">
-          <a href="#">Login</a>
-          <a href="#" class="btn">
+          <Link to={"/login"}>Login</Link>
+          <Link to={"/register"} class="btn">
             Signup
-          </a>
+          </Link>
         </div>
       </div>
     </nav>
