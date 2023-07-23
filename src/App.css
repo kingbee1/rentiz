@@ -418,6 +418,10 @@ footer h4{
         width: 81%;
     }
 
+    /* footer */
+    .footer__container {
+        grid-template-columns: 1fr 1fr;
+    }
 
 }
 
