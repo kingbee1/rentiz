@@ -382,6 +382,9 @@ footer h4{
     }
 
     /* residense */
+    .residence__card-base {
+        gap: 0.2rem;
+    }
     .residence__card-base .icon {
         font-size: 22px;
     }
@@ -453,12 +456,24 @@ footer h4{
         font-size: 14px;
     }
     
-    body {
-        background: red;
+     .container {
+        width: var(--container-width-md) !important; 
     }
 
-    .container {
-        background: red;
+    section {
+        padding-bottom: var(--bottom-section-padding-mobile);
+    }
+
+    h1 {
+        font-size: 2.8rem;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+    }
+
+    h3 {
+        font-size: 1.1rem;
     }
 
 }
