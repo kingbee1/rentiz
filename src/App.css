@@ -86,11 +86,13 @@ header h1{
 }
 .feature__image {
     display: grid;
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     gap: 1rem;
 }
 
 .feature__image img {
+    display: grid;
+    place-items: center;
     height: 8rem;
 }
 
@@ -381,6 +383,12 @@ footer h4{
         margin: 0; 
     }
 
+    /* feature */
+    .feature__image {
+        grid-template-columns: repeat(3, 1fr);
+        gap: 1rem;
+    }
+
     /* residense */
     .residence__card-base {
         gap: 0.2rem;
@@ -479,6 +487,13 @@ footer h4{
     .nav__container-logo {
         margin-left: 1rem;
     }
-
+    /* feature */
+    .feature__image {
+      grid-template-columns: 1fr 1fr;
+      gap: 9px;
+      height: 6rem;
+      margin-bottom: 8rem;
+    }
 }
+
 
