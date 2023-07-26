@@ -391,8 +391,20 @@ footer h4{
 
 
     /* choose */
+    .choose__content {
+        gap: 1rem;
+    }
+
+    .choose__card p {
+        width: 100%;
+    }
     .choose_icon {
         font-size: 58px;
+    }
+
+    .icon-wrap {
+        width: 166px;
+        height: 166px;
     }
 
     /* help-tablet */
