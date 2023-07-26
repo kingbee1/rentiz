@@ -85,13 +85,13 @@ header h1{
     background: var(--color-bg);
 }
 .feature__image {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 1rem;
 }
 
 .feature__image img {
-    width: 90px;
+    height: 8rem;
 }
 
 /* resident */
@@ -457,7 +457,7 @@ footer h4{
     }
     
      .container {
-        width: var(--container-width-md) !important; 
+        width: var(--container-width-sm) !important; 
     }
 
     section {
@@ -474,6 +474,10 @@ footer h4{
 
     h3 {
         font-size: 1.1rem;
+    }
+
+    .nav__container-logo {
+        margin-left: 1rem;
     }
 
 }
