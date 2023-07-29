@@ -1,7 +1,7 @@
 import React from 'react'
 import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
-import login from '../assets/house2.png'
+import login from '../assets/login.png'
 import '../styles/login.css'
 
 const Login = () => {
@@ -17,10 +17,8 @@ const Login = () => {
         <div className='login__container-form'>
           <h1>Login</h1>
           <form className='form__container'>
-            <label for="email">Email address</label>
-            <input type="email" name="" id="" />
-            <label for="password">Password</label> 
-            <input type="password" name="" required/> 
+            <input type="email" name="" id="" placeholder='Email address' />
+            <input type="password" name="" placeholder='Password' required/> 
             <a className='form__btn' href="/register">Login</a>
           </form>
         </div>

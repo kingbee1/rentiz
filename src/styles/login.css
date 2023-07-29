@@ -27,6 +27,8 @@
 .form__container input {
     padding: 0.9rem 0.5rem;
     border-radius: 6px;
+    margin-bottom: 1rem;
+    border: 0;
 }
 
 .form__btn {
@@ -38,3 +40,17 @@
     border: 1px solid transparent;
     border-radius: 0.4rem;
 }
+
+.form__radio {
+    display: flex;
+    align-items: center;
+}
+
+.form__radio input[type="radio"] {
+    margin-right: 2rem; 
+    text-align: center;
+  }
+
+  .form__radio label {
+    margin-right: 0.7rem; 
+  }
