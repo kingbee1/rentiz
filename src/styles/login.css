@@ -18,6 +18,10 @@
     width: 100%;
 }
 
+.login__container-form h1{
+    font-weight: 600;
+}
+
 .form__container {
     display: flex;
     flex-direction: column;
@@ -48,6 +52,7 @@
 
 .form__radio input[type="radio"] {
     margin-right: 2rem; 
+    margin-top: 1rem;
     text-align: center;
   }
 
