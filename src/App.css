@@ -385,6 +385,10 @@ footer h4{
         margin: 0; 
     }
 
+
+
+  
+
     /* feature */
     .feature__image {
         grid-template-columns: repeat(3, 1fr);
