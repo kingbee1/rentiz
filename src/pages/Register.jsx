@@ -11,6 +11,13 @@ const Register = () => {
   const [number, setNumber] = useState("");
   const [sex, setSex] = useState("");
 
+  const submitHandler = (e) => {
+    e.preventDefault()
+  }
+
+  //let's validate registration credentials.
+  const validate = () => {}
+
   return (
     <div>
       <Navbar />
@@ -21,7 +28,7 @@ const Register = () => {
 
         <div className="login__container-form">
           <h1>Register</h1>
-          <form className="form__container">
+          <form className="form__container" onSubmit={submitHandler}>
             <input 
             type="email" 
             name="" 
