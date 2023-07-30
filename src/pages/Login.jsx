@@ -21,6 +21,12 @@ const Login = () => {
             <input type="password" name="" placeholder='Password' required/> 
             <a className='form__btn' href="/register">Login</a>
           </form>
+          <div className="header__search">
+          <form className="header__search-form">
+            <input type="text" placeholder="search" />
+            <button type="submit">search</button>
+          </form>
+        </div>
         </div>
       </div>
       <Footer />

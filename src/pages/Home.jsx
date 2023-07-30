@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/home.css'
 import Footer from "../components/Footer";
 import Navbar from "../components/Navbar";
 import house from "../assets/home.png";
@@ -54,10 +55,15 @@ const Home = () => {
         <div className="header__image">
           <img src={house} alt="houes" />
         </div>
-        
-        <div className="header__base-search">
-        <p>back</p>
+
+        <div className="header__search">
+          <form className="header__search-form">
+            <input type="text" placeholder="search" />
+            <button type="submit">search</button>
+          </form>
         </div>
+        
+       
       </header>
 
       <section className="container feature__container">
