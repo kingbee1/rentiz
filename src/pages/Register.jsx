@@ -2,12 +2,13 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import register from "../assets/register.png";
 import { useState } from "react";
+import { toast } from "react-toastify";
 
 const Register = () => {
 
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
-  const [createPassword, setCreatePassword] = useState("");
+  const [confirmPassword, setConfirmPassword] = useState("");
   const [number, setNumber] = useState("");
   const [sex, setSex] = useState("");
 
@@ -16,7 +17,19 @@ const Register = () => {
   }
 
   //let's validate registration credentials.
-  const validate = () => {}
+  const validate = () => {
+    let isproceed = true;
+    let errormessage = "insert your "
+    if (confirmPassword === null || confirmPassword != password) {
+      isproceed = false;
+      errormessage += "password"
+      console.log('confirmPassword')
+    }
+    if (!isproceed) {
+      toast.warning(errormessage)
+    } 
+    return isproceed;
+  }
 
   return (
     <div>
@@ -42,8 +55,8 @@ const Register = () => {
 
             <input
               type="password"
-              value={createPassword}
-              onChange={(e)=> setCreatePassword(e.target.value)}
+              value={confirmPassword}
+              onChange={(e)=> setConfirmPassword(e.target.value)}
               placeholder="Confirm password"
               required
             />
