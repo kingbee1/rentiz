@@ -10,6 +10,11 @@ const Login = () => {
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
 
+  //submit handler function.
+  const handleLogin = (e) => {
+    e.preventDefault()
+  }
+
   return (
     <div>
       <Navbar />
@@ -21,7 +26,7 @@ const Login = () => {
 
         <div className='login__container-form'>
           <h1>Login</h1>
-          <form className='form__container'>
+          <form onSubmit={handleLogin} className='form__container'>
             <input 
             value={email} 
             type="email" 
@@ -35,7 +40,8 @@ const Login = () => {
             placeholder='Password' required
             onChange={(e) => setPassword(e.target.value)}
             /> 
-            <a className='form__btn' href="/register">Login</a>
+            {/* <a className='form__btn' href="/register">Login</a> */}
+            <button type="submit" className='form__btn'>Login</button>
           </form>
           
         </div>

@@ -41,8 +41,10 @@
     padding: 0.6rem 2.3rem;
     background: var(--color-primary);
     font-weight: 500;
+    font-size: 1.1rem;
     border: 1px solid transparent;
     border-radius: 0.4rem;
+    color: var(--color-white);
 }
 
 .form__radio {
