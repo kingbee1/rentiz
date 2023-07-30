@@ -3,8 +3,13 @@ import Footer from '../components/Footer'
 import Navbar from '../components/Navbar'
 import login from '../assets/login.png'
 import '../styles/login.css'
+import { useState } from 'react'
 
 const Login = () => {
+
+  const [email, setEmail] = useState("");
+  const [password, setPassword] = useState("");
+
   return (
     <div>
       <Navbar />
@@ -17,8 +22,19 @@ const Login = () => {
         <div className='login__container-form'>
           <h1>Login</h1>
           <form className='form__container'>
-            <input type="email" name="" id="" placeholder='Email address' />
-            <input type="password" name="" placeholder='Password' required/> 
+            <input 
+            value={email} 
+            type="email" 
+            name="" 
+            onChange={(e) => setEmail (e.target.value)}
+            placeholder='Email address' 
+            />
+            <input 
+            type="password" 
+            value={password}
+            placeholder='Password' required
+            onChange={(e) => setPassword(e.target.value)}
+            /> 
             <a className='form__btn' href="/register">Login</a>
           </form>
           
