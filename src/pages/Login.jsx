@@ -40,7 +40,6 @@ const Login = () => {
             placeholder='Password' required
             onChange={(e) => setPassword(e.target.value)}
             /> 
-            {/* <a className='form__btn' href="/register">Login</a> */}
             <button type="submit" className='form__btn'>Login</button>
           </form>
           
