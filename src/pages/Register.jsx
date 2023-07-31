@@ -5,31 +5,68 @@ import { useState } from "react";
 import { toast } from "react-toastify";
 
 const Register = () => {
-
   const [email, setEmail] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
   const [number, setNumber] = useState("");
   const [sex, setSex] = useState("");
 
-  const submitHandler = (e) => {
-    e.preventDefault()
-  }
-
   //let's validate registration credentials.
   const validate = () => {
     let isproceed = true;
-    let errormessage = "insert your "
-    if (confirmPassword === null || confirmPassword != password) {
+    let errormessage = "put your ";
+    if (email === null || email === "") {
       isproceed = false;
-      errormessage += "password"
-      console.log('confirmPassword')
+      errormessage += "email address";
+      console.log({ errormessage });
+    }
+    if (password === null || password === "") {
+      isproceed = false;
+      errormessage += "password";
+    }
+
+    if (confirmPassword === null || confirmPassword === "") {
+      isproceed = false;
+      errormessage += "password";
+    }
+
+    if (number === null || number === "") {
+      isproceed = false;
+      errormessage += "phone number";
     }
     if (!isproceed) {
-      toast.warning(errormessage)
-    } 
+      toast.warning(errormessage);
+    } else {
+      //if all ain't empty, regEx is used to confirm email matches this particular pattern.
+      if (/^[a-zA-Z0-9]+@[a-zA-Z0-9]+\.[A-Za-z]+$/.test(email)) {
+      } else {
+        //if it doesn't match the pattern, toast warning message.
+        isproceed = false;
+        toast.warning("please enter a valid email address");
+      }
+    }
     return isproceed;
-  }
+  };
+
+  const submitHandler = (e) => {
+    e.preventDefault();
+
+    let registration = { email, password, confirmPassword, number, sex };
+
+    if (validate()) {
+      fetch("https://dummyjson.com/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          username: "kminchelle",
+          password: "0lelplR",
+          // expiresInMins: 60, // optional
+        }),
+      })
+        .then((res) => res.json())
+        .then(console.log);
+    }
+  };
 
   return (
     <div>
@@ -42,30 +79,35 @@ const Register = () => {
         <div className="login__container-form">
           <h1>Register</h1>
           <form className="form__container" onSubmit={submitHandler}>
-            <input 
-            type="email" 
-            name="" 
-            value={email} 
-            onChange={(e) => setEmail(e.target.value)}
-            placeholder="Email address" />
-            <input type="password" 
-            value={password} 
-            onChange={(e)=> setPassword(e.target.value)}
-            placeholder="Password" required />
+            <input
+              type="email"
+              name=""
+              value={email}
+              onChange={(e) => setEmail(e.target.value)}
+              placeholder="Email address"
+            />
+            <input
+              type="password"
+              value={password}
+              onChange={(e) => setPassword(e.target.value)}
+              placeholder="Password"
+              required
+            />
 
             <input
               type="password"
               value={confirmPassword}
-              onChange={(e)=> setConfirmPassword(e.target.value)}
+              onChange={(e) => setConfirmPassword(e.target.value)}
               placeholder="Confirm password"
               required
             />
 
-            <input 
-            type="text" 
-            value={number}
-            onChange={(e) => setNumber(e.target.value)}
-            placeholder="Phone Number" />
+            <input
+              type="text"
+              value={number}
+              onChange={(e) => setNumber(e.target.value)}
+              placeholder="Phone Number"
+            />
 
             {/* <p>Are you working with an associate or office?</p> */}
 
@@ -78,7 +120,7 @@ const Register = () => {
                 onChange={(e) => setSex(e.target.value)}
                 className="app-check"
               ></input>
-              
+
               <label>Female</label>
               <input
                 type="radio"
