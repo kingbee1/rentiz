@@ -52,20 +52,40 @@ const Register = () => {
     e.preventDefault();
 
     let registration = { email, password, confirmPassword, number, sex };
-
-    if (validate()) {
-      fetch("https://dummyjson.com/auth/login", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          username: "kminchelle",
-          password: "0lelplR",
-          // expiresInMins: 60, // optional
-        }),
+    console.log(email, password, confirmPassword, number, sex)
+    fetch('http://localhost:5000/register', {
+      method: 'POST',
+      crossDomain: true,
+      headers: {
+        "Content-Type":"application/json",
+        Accept: "application/json",
+        "Access-Control-Allow-Origin": "*",
+      },
+      body: JSON.stringify({
+        email, 
+        password, 
+        confirmPassword, 
+        number, 
+        sex,
       })
-        .then((res) => res.json())
-        .then(console.log);
-    }
+    }).then((res)=>res.json())
+    .then((data)=>{
+      console.log(data, "userRegister");
+    })
+
+    // if (validate()) {
+    //   fetch("https://dummyjson.com/auth/login", {
+    //     method: "POST",
+    //     headers: { "Content-Type": "application/json" },
+    //     body: JSON.stringify({
+    //       username: "kminchelle",
+    //       password: "0lelplR",
+    //       // expiresInMins: 60, // optional
+    //     }),
+    //   })
+    //     .then((res) => res.json())
+    //     .then(console.log);
+    // }
   };
 
   return (
@@ -135,6 +155,7 @@ const Register = () => {
               Create Account
             </button>
           </form>
+          <p>Already registered? <a href="/login" >sign in</a></p>
         </div>
       </div>
       <Footer />
