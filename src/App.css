@@ -488,6 +488,19 @@ footer h4{
         padding: 1rem;
     }
 
+    /* residence */
+    .residence__card-base >div {
+        gap: 0.3rem;
+    }
+
+    .residence__card-base .icons {
+        font-size: 18px;
+    }
+
+    .residence__card p {
+        font-size: 0.8rem;
+    }
+
     /* choose */
     .choose__content {
         flex-direction: column;
