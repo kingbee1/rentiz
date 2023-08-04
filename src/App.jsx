@@ -9,6 +9,7 @@ import Selling from "./pages/Selling";
 import ContactUs from "./pages/Buying";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
+import WelcomePage from "./pages/WelcomePage"
 
 
 function App() {
@@ -25,6 +26,7 @@ function App() {
           <Route path="/selling" element={<Selling />} />
           <Route path="/contact-us" element={<ContactUs />} />
           <Route path="/about-us" element={<Buying />} />
+          <Route path="/welcome-page" element={<WelcomePage /> } />
         </Routes>
       </BrowserRouter>
     </div>

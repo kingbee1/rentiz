@@ -3,7 +3,7 @@ import Footer from "../components/Footer";
 import register from "../assets/register.png";
 import { useState } from "react";
 import { toast } from "react-toastify";
-import { Navigate, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -56,6 +56,7 @@ const Register = () => {
 
     let registration = { email, password, confirmPassword, number, sex };
     console.log(email, password, confirmPassword, number, sex)
+    if (validate()){
     fetch('http://localhost:5000/register', {
       method: 'POST',
       crossDomain: true,
@@ -74,10 +75,17 @@ const Register = () => {
     }).then((res)=>res.json())
     .then((data)=>{
       console.log(data, "userRegister");
-  
-      //navigate("/selling")
+      if(data.status=="oka"){
+        toast.success("Registration complete")
+        //navigate("/selling")
+      } else {
+        toast.error("user already exist!")
+      }
     })
-
+    .catch((err) =>{
+      toast.error("An error occurred. Try later??")
+    })
+}
   };
 
   return (
