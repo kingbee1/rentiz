@@ -3,6 +3,7 @@ import Footer from "../components/Footer";
 import register from "../assets/register.png";
 import { useState } from "react";
 import { toast } from "react-toastify";
+import { Navigate, useNavigate } from "react-router-dom";
 
 const Register = () => {
   const [email, setEmail] = useState("");
@@ -10,6 +11,8 @@ const Register = () => {
   const [confirmPassword, setConfirmPassword] = useState("");
   const [number, setNumber] = useState("");
   const [sex, setSex] = useState("");
+
+  const navigate = useNavigate();
 
   //let's validate registration credentials.
   const validate = () => {
@@ -71,21 +74,10 @@ const Register = () => {
     }).then((res)=>res.json())
     .then((data)=>{
       console.log(data, "userRegister");
+  
+      //navigate("/selling")
     })
 
-    // if (validate()) {
-    //   fetch("https://dummyjson.com/auth/login", {
-    //     method: "POST",
-    //     headers: { "Content-Type": "application/json" },
-    //     body: JSON.stringify({
-    //       username: "kminchelle",
-    //       password: "0lelplR",
-    //       // expiresInMins: 60, // optional
-    //     }),
-    //   })
-    //     .then((res) => res.json())
-    //     .then(console.log);
-    // }
   };
 
   return (
