@@ -63,7 +63,7 @@ const Login = () => {
         .then((data) => {
           console.log(data, "userRegister");
           //from here downward not trigerring??
-          if (data.status) {
+          if (data.status=="okay") {
             
             toast.success("Successfully logged in.");
             navigate ("/selling");
