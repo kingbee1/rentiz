@@ -6,7 +6,7 @@ import Register from "./pages/Register";
 import Buying from "./pages/Buying";
 import Renting from "./pages/Renting";
 import Selling from "./pages/Selling";
-import ContactUs from "./pages/Buying";
+import ContactUs from "./pages/ContactUs";
 import { ToastContainer } from "react-toastify";
 import 'react-toastify/dist/ReactToastify.css';
 import WelcomePage from "./pages/WelcomePage"
