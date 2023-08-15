@@ -1,4 +1,31 @@
 .buying__container {
-    margin-top: 7rem;
+    margin-top: 7rem !important;
+}
+
+.buying__container-content {
+    display: flex;
+    gap: 2rem;
+}
+
+
+.buying__container-left {
+
+}
+
+.buying__content-image {
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.buying__content-image:last-child {
+    margin-bottom: 0rem;
+}
+
+
+.buying__content-image img {
+    height: 300px;
+    width: 340px;
 }
 
