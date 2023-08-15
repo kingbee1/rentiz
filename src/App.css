@@ -171,6 +171,7 @@ header h1{
 
 .choose__card p {
     width: 90%;
+    margin: 0 auto;
 }
 
 .choose__base {
@@ -485,7 +486,7 @@ footer h4{
         display: flex;
         flex-direction: column;
         width: 100%;
-        padding: 1rem;
+        padding: 0.2rem;
     }
 
     /* residence */
