@@ -1,8 +1,16 @@
 import { Link, NavLink } from "react-router-dom";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { IoMdClose } from "react-icons/io";
+import { useState } from "react";
+
 
 const Navbar = () => {
+  const [show, setShow] = useState(false)
+  const handleClick = () => {
+    setShow(!show);
+    
+  }
+
   return (
     <nav>
       <div className="container nav__container">
@@ -24,8 +32,8 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <button id="menu__btn"><GiHamburgerMenu /></button>
-        <button id="close__btn"><IoMdClose /></button>
+        <button id="menu__btn">{!show ? <GiHamburgerMenu onClick={handleClick} /> : <IoMdClose onClick={handleClick} /> }</button>
+        {/* <button id="close__btn"><IoMdClose /></button> */}
         
       </div>
     </nav>

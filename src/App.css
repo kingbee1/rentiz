@@ -313,6 +313,10 @@ footer h4{
         background-color: var(--color-bg);
     }
 
+    .active {
+        display: none;
+    }
+    
     .nav__container {
         position: relative;
         width: 100vw;
@@ -329,14 +333,18 @@ footer h4{
     .nav__items {
         position: fixed;
         top: 6rem;
-        right: 0;
-        background: var(--color-white);
+        align-items: center;
+        background: var(--color-bg);
         height: max-content;
-        width: 18rem;
+        width: 100vw;
         flex-direction: column;
-        gap: 0;
+        gap: 0.23rem;
         z-index: 3;
-        display: none;
+        /* display: none; */
+    }
+
+    .nav__items .open {
+        display: flex;
     }
 
     .nav__signin-signup {
