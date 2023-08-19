@@ -32,6 +32,10 @@ nav {
    gap: 3.5rem;
 }
 
+.menu {
+    display: none;
+}
+
 .nav__signin-signup {
     display: flex;
     gap: 1.5rem;
@@ -40,6 +44,10 @@ nav {
 
 #menu__btn, #close__btn {
     display: none;
+}
+
+.menu__btn {
+
 }
 
 /* -------------------HEADER-------------------- */
@@ -332,20 +340,40 @@ footer h4{
 
     .nav__items {
         position: fixed;
+        display: flex;
+        flex-direction: column;
+        top: 6rem;
+        right: 6rem;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    /* .menu {
+        position: absolute;
         top: 6rem;
         align-items: center;
         background: var(--color-bg);
         height: max-content;
-        width: 100vw;
+        width: 100%;
         flex-direction: column;
-        gap: 0.23rem;
-        z-index: 3;
-        /* display: none; */
+        gap: 0.5rem;
+    } */
+
+
+    #menu__btn {
+    display: block;
     }
 
-    .nav__items .open {
-        display: flex;
+    .menu {
+    display: none; 
     }
+
+    .menu.close {
+    display: block;
+    }
+
 
     .nav__signin-signup {
         display: none;
@@ -357,6 +385,7 @@ footer h4{
         color: var(--color-white);
         font-size: 2rem;
     }
+    
     #close__btn {
         display: none;
         background: var(--color-bg);

@@ -5,18 +5,18 @@ import { useState } from "react";
 
 
 const Navbar = () => {
-  const [show, setShow] = useState(false)
-  const handleClick = () => {
-    setShow(!show);
+  const [click, setClick] = useState(false)
+  const handleClick = () =>  setClick(!click); 
     
-  }
+
+
 
   return (
     <nav>
       <div className="container nav__container">
         <Link to={"/"} className="nav__container-logo logo">Rentiz</Link>
        
-        <ul className="nav__items">
+        <ul className={click ? 'nav__items' : 'menu'}>
           <NavLink to='/'><li>Home</li></NavLink>
           <NavLink to="/about-us"><li>About Us</li></NavLink>
           <NavLink to='/buying'><li>Buying</li></NavLink>
@@ -25,6 +25,7 @@ const Navbar = () => {
           <NavLink to='/contact-us'><li>Contact Us</li></NavLink>
         </ul>
 
+
         <div className="nav__signin-signup">
           <Link to={"/login"}>Login</Link>
           <Link to={"/register"} class="btn">
@@ -32,8 +33,10 @@ const Navbar = () => {
           </Link>
         </div>
 
-        <button id="menu__btn">{!show ? <GiHamburgerMenu onClick={handleClick} /> : <IoMdClose onClick={handleClick} /> }</button>
-        {/* <button id="close__btn"><IoMdClose /></button> */}
+        <div className="menu__btn" onClick={handleClick}>
+          {click ? <IoMdClose /> : <GiHamburgerMenu />  }
+        </div>
+
         
       </div>
     </nav>
