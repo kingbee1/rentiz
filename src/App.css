@@ -26,6 +26,11 @@ nav {
     font-size: 2.4rem;
     font-weight: 800;
 }
+.nav__items-a{
+    display: flex; 
+    gap: 3.5rem;
+ }
+
 
 .nav__items {
    display: flex; 
@@ -42,12 +47,9 @@ nav {
     align-items: center;
 }
 
-#menu__btn, #close__btn {
-    display: none;
-}
 
 .menu__btn {
-
+    display: none;
 }
 
 /* -------------------HEADER-------------------- */
@@ -337,41 +339,22 @@ footer h4{
     .nav__container-logo {
         margin-left: 2rem;
     }
-
-    .nav__items {
-        position: fixed;
-        display: flex;
-        flex-direction: column;
-        top: 6rem;
-        right: 6rem;
-    }
-
-    .menu {
+    
+    .nav__items-a {
         display: none;
     }
 
-    /* .menu {
+    .nav__items {
         position: absolute;
-        top: 6rem;
+        top: 4.7rem;
         align-items: center;
         background: var(--color-bg);
         height: max-content;
         width: 100%;
         flex-direction: column;
-        gap: 0.5rem;
-    } */
-
-
-    #menu__btn {
-    display: block;
-    }
-
-    .menu {
-    display: none; 
-    }
-
-    .menu.close {
-    display: block;
+        gap: 0.9rem;
+        font-size: 1.2rem;
+        padding-bottom: 2rem;
     }
 
 
@@ -379,19 +362,13 @@ footer h4{
         display: none;
     }
 
-    #menu__btn {
+    .menu__btn {
         display: block;
         background: var(--color-bg);
         color: var(--color-white);
         font-size: 2rem;
     }
     
-    #close__btn {
-        display: none;
-        background: var(--color-bg);
-        color: var(--color-white);
-        font-size: 2rem;
-    }
 
     /* header */
     .header__container {
