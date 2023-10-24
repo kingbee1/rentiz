@@ -16,7 +16,7 @@
     margin-top: 4rem;
     margin-bottom: 1rem;
     display: flex;
-    gap: 1rem;
+    gap: 2.3rem;
 }
 
 .buying__content-image:last-child {
@@ -25,7 +25,7 @@
 
 
 .buying__content-image img {
-    height: 300px;
-    width: 300px;
+    height: 400px;
+    width: 400px;
 }
 

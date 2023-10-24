@@ -32,9 +32,9 @@ const Renting = () => {
             <div className="buying__content-image1">
               <img src={house2} alt="house for sale" />
               <div className="buying__content-info">
-                <h3>IKEJA</h3>
-                <h5>Awolowo road, Airport</h5>
-                <h5>#56,000,000</h5>
+                <h3>2 Bedroom Apartment</h3>
+                <h5>Lekki Phase 1 Lekki Lagos</h5>
+                <h5>#56,000,000/Year</h5>
               </div>
             </div>
             

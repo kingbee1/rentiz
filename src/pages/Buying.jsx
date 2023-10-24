@@ -24,8 +24,8 @@ const Buying = () => {
             <div className="buying__content-image1">
               <img src={house1} alt="house for sale" />
               <div className="buying__content-info">
-                <h3>IKEJA</h3>
-                <h5>Awolowo road, Airport</h5>
+                <h3>Detached Triplex</h3>
+                <h5>Awolowo road, Airport, Lagos</h5>
                 <h5>#55,000,000</h5>
               </div>
             </div>
@@ -33,11 +33,20 @@ const Buying = () => {
             <div className="buying__content-image1">
               <img src={house2} alt="house for sale" />
               <div className="buying__content-info">
-                <h3>IKEJA</h3>
-                <h5>Awolowo road, Airport</h5>
+                <h3>2 Bedroom Apartment</h3>
+                <h5>Lekki Phase 1 Lekki Lagos</h5>
                 <h5>#56,000,000</h5>
               </div>
             </div>
+
+            <div className="buying__content-image1">
+            <img src={house1} alt="house for sale" />
+            <div className="buying__content-info">
+              <h3>IKEJA</h3>
+              <h5>Line 2 road, Airport</h5>
+              <h5>#56,000,000</h5>
+            </div>
+          </div>
             
           </div>
 
@@ -46,8 +55,8 @@ const Buying = () => {
           <div className="buying__content-image1">
             <img src={house1} alt="house for sale" />
             <div className="buying__content-info">
-              <h3>IKEJA</h3>
-              <h5>Awolowo road, Airport</h5>
+              <h3>Semi-Detached Bungalow</h3>
+              <h5>Line 2 road, Airport</h5>
               <h5>#56,000,000</h5>
             </div>
           </div>
@@ -55,9 +64,18 @@ const Buying = () => {
           <div className="buying__content-image1">
             <img src={house2} alt="house for sale" />
             <div className="buying__content-info">
-              <h3>IKEJA</h3>
+              <h3>Detached Duplex</h3>
               <h5>Awolowo road, Airport</h5>
               <h5>#56,000,000</h5>
+            </div>
+          </div>
+
+          <div className="buying__content-image1">
+            <img src={house1} alt="house for sale" />
+            <div className="buying__content-info">
+              <h3>Terrace</h3>
+              <h5>Osapa London, Lekki</h5>
+              <h5>#150,000,000</h5>
             </div>
           </div>
           
@@ -82,6 +100,15 @@ const Buying = () => {
               <h5>#56,000,000</h5>
             </div>
           </div>
+
+          <div className="buying__content-image1">
+            <img src={house1} alt="house for sale" />
+            <div className="buying__content-info">
+              <h3>IKEJA</h3>
+              <h5>Line 2 road, Airport</h5>
+              <h5>#56,000,000</h5>
+            </div>
+          </div>
           
         </div>
 
@@ -104,6 +131,15 @@ const Buying = () => {
               <p>#56,000,000</p>
             </div>
           </div>
+
+          <div className="buying__content-image1">
+            <img src={house1} alt="house for sale" />
+            <div className="buying__content-info">
+              <h3>IKEJA</h3>
+              <h5>Line 2 road, Airport</h5>
+              <h5>#56,000,000</h5>
+            </div>
+          </div>
           
         </div>
 
@@ -126,18 +162,22 @@ const Buying = () => {
               <p>#56,000,000</p>
             </div>
           </div>
+
+          <div className="buying__content-image1">
+            <img src={house1} alt="house for sale" />
+            <div className="buying__content-info">
+              <h3>IKEJA</h3>
+              <h5>Line 2 road, Airport</h5>
+              <h5>#56,000,000</h5>
+            </div>
+          </div>
           
         </div>
 
-          
-
           </div>
 
           
-
-          <div className="buying__content-map">
-            <h1>map una,,,,,,,,,</h1>
-          </div>
+         
 
         </div>
       </section>
