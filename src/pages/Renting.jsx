@@ -87,7 +87,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <h5>Awolowo road, Airport</h5>
-              <h5>#56,000,000</h5>
+              <h5>#56,000,000/Year</h5>
             </div>
           </div>
 
@@ -96,7 +96,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <h5>Awolowo road, Airport</h5>
-              <h5>#56,000,000</h5>
+              <h5>#56,000,000/Year</h5>
             </div>
           </div>
 
@@ -105,7 +105,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
           
@@ -118,7 +118,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
 
@@ -127,7 +127,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
 
@@ -136,7 +136,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
           
@@ -149,7 +149,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
 
@@ -158,7 +158,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
 
@@ -167,7 +167,7 @@ const Renting = () => {
             <div className="buying__content-info">
               <h3>3 Bedroom Apartment</h3>
               <p>Awolowo road, Airport</p>
-              <p>#56,000,000</p>
+              <p>#56,000,000/Year</p>
             </div>
           </div>
           
